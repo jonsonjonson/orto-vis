@@ -1,0 +1,17 @@
+# Distribution build #
+/__BUILD__/
+/dist/
+
+# Node #
+/node_modules/
+
+
+
+# NetBeans #
+/nbproject/
+
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
