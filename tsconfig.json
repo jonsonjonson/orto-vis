@@ -12,7 +12,21 @@
     "listFiles": false,
     "outDir": "dist"
   },
+  "filesGlob": [
+    "src/typings/**/*.ts",
+    "src/app/**/*.ts"
+  ],
   "files": [
-    "src/app/bootstrap.ts"
-  ]
+    "src/typings/_custom.d.ts",
+    "src/typings/browser.d.ts",
+    "src/typings/webpack.d.ts",
+    "src/app/app.ts",
+    "src/app/bootstrap.ts",
+    "src/app/components/about/about.ts",
+    "src/app/components/contact/contact.ts",
+    "src/app/components/home/home.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }

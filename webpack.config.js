@@ -11,7 +11,6 @@ var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var DedupePlugin = webpack.optimize.DedupePlugin;
 var DefinePlugin = webpack.DefinePlugin;
 
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 
 /*
@@ -25,11 +24,17 @@ module.exports = {
   verbose: true,
   displayErrorDetails: true,
   context: __dirname,
+  stats: {
+    colors: true,
+    reasons: true
+  },
 
   // our Development Server config
   devServer: {
+    inline: true,
+    colors: true,
     historyApiFallback: true,
-    contentBase: 'src/public',
+    contentBase: 'src/public/',
     publicPath: '/__build__'
   },
 
@@ -57,6 +62,7 @@ module.exports = {
       // './examples/game-tictactoe/bootstrap'
       // './examples/simple-component/bootstrap'
       // './examples/simple-todo/bootstrap'
+      // './examples/large-app/bootstrap'
 
       './src/app/bootstrap'
     ]
@@ -75,12 +81,12 @@ module.exports = {
     root: __dirname,
     extensions: ['', '.ts', '.js', '.json'],
     alias: {
-      'rx': '@reactivex/rxjs'
-        // 'common': 'src/common',
-        // 'bindings': 'src/bindings',
-        // 'components': 'src/app/components'
-        // 'services': 'src/app/services',
-        // 'stores': 'src/app/stores'
+      'rx': '@reactivex/rxjs',
+      // 'common': 'src/common',
+      // 'bindings': 'src/bindings',
+      // 'components': 'src/app/components'
+      // 'services': 'src/app/services',
+      // 'stores': 'src/app/stores'
     }
   },
 
@@ -145,10 +151,6 @@ module.exports = {
     new CommonsChunkPlugin({
       name: 'common',
       filename: 'common.js'
-    }),
-
-    new OpenBrowserPlugin({
-      url: 'http://localhost:3000'
     })
   ],
 

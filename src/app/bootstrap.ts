@@ -6,6 +6,7 @@
  * Providers provided by Angular
  */
 import {bootstrap} from 'angular2/angular2';
+import {ROUTER_PROVIDERS} from 'angular2/router';
 
 
 /*
@@ -14,9 +15,8 @@ import {bootstrap} from 'angular2/angular2';
  */
 import {App} from './app';
 
-
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
  * our Services and Providers into Angular's dependency injection
  */
-bootstrap(App);
+bootstrap(App, ROUTER_PROVIDERS);
