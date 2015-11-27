@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<nav class="navbar navbar-default navbar-fixed-top">
-
-  <div class="container">
-
+<nav id="menu" class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuElements" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">Project name</a>
+      <a class="navbar-brand" href="#"></a>
     </div>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a [router-link]="['/Home']">Home</a></li>
-        <li><a [router-link]="['/About']">About</a></li>
-        <li><a [router-link]="['/Contact']">Contact</a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="menuElements">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="element"><a [router-link]="['/Home']">STRONA GŁÓWNA</a></li>
+        <li class="element"><a [router-link]="['/About']">O NAS</a></li>
+        <li class="element"><a href="#">PIERWSZA WIZYTA</a></li>
+        <li class="element"><a href="#">ORTODONCJA</a></li>
+        <li class="element"><a href="#">STOMATOLOGIA</a></li>
+        <li class="element"><a href="#">PROTETYKA</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERIA <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">WYLECZENI PACJENCI</a></li>
+            <li><a href="#">CERTYFIKATY</a></li>
+          </ul>
+        </li>
+        <li class="element"><a [router-link]="['/Contact']">KONTAKT</a></li>
       </ul>
     </div>
-
+    <!-- /.navbar-collapse -->
   </div>
-
+  <!-- /.container-fluid -->
+  <div class="bottom"></div>
 </nav>
 
 <router-outlet></router-outlet>

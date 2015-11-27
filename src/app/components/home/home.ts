@@ -1,15 +1,17 @@
 import {Component, View} from 'angular2/angular2';
 
+import {MainCarosuel} from '../shared-components/main-carosuel/main-carosuel';
+
 
 
 @Component({
   selector: 'home'
 })
 @View({
+  directives: [MainCarosuel],
   template: require('./home.html'),
   styles: [
-    require('./styles/carousel.scss'),
-    require('./styles/marketing-content.scss')
+    require('./styles/test.scss')
   ]
 })
 

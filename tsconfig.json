@@ -24,7 +24,8 @@
     "src/app/bootstrap.ts",
     "src/app/components/about/about.ts",
     "src/app/components/contact/contact.ts",
-    "src/app/components/home/home.ts"
+    "src/app/components/home/home.ts",
+    "src/app/components/shared-components/main-carosuel/main-carosuel.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
