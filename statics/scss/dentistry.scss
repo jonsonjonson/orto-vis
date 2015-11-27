@@ -1,0 +1,53 @@
+@import "main.scss";
+// ***************************************************************************** ORTHODONTICS
+#orthodontics,
+#dentistry,
+#prosthetics{
+    margin-top: 30px;
+    margin-bottom: -30px;
+    padding: 30px;
+    .smallHeader {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    #accordion {
+        margin-top: 30px;
+        .panel {
+            .panel-heading {
+                color: $primary-color;
+                
+                background-color: $light-grey;
+                border-color: $dark-grey;
+                min-height: 60px;
+                .panel-title {
+                    text-decoration: none;
+                    a {
+                        font-weight: bold;
+                        width: 100%;
+                        line-height: 40px;
+                    }
+                    
+                }
+                .panel-title a:hover,
+                .panel-title a:active,
+                .panel-title a:focus
+                {
+                    text-decoration: none;
+                } 
+            }
+            .panel-heading:hover {
+                background-color: #ddd;
+            }
+            .panel-body {
+                padding: 25px;
+                ul {
+                    padding-left: 0;
+                    margin-bottom: 20px;
+                    li {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

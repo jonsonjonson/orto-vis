@@ -26,7 +26,7 @@ import {Description} from './components/description/description';
   ],
   template: require('./home.html'),
   styles: [
-    require('./styles/test.scss')
+    require('./styles/home.scss')
   ]
 })
 

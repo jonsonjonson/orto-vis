@@ -1,0 +1,37 @@
+
+.images {
+    margin-top: 30px;
+    margin-bottom: -30px;
+    text-align: center;
+    .header {
+        margin-top: -30px;
+        background-color: #E4E4E4;
+        font-size: 24px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+    }
+    .image {
+        width: auto;
+        height: auto;
+        margin: 20px; 
+        img {
+            @include grayscale(60%);
+            border: 4px solid $dark-grey;
+        }
+    }
+    .image img:first-child{
+        opacity: 1;
+    }
+    .image img:nth-child(2){
+        opacity: 0;
+        position: relative;
+        margin-top: -61%;
+        
+    }
+    .image:hover img:nth-child(2){
+        @include grayscale(0%);
+        opacity: 1;
+        transition-duration: 1s;
+    }
+}

@@ -17,7 +17,11 @@ import {Contact} from './components/contact/contact';
 })
 @View({
   directives: [ROUTER_DIRECTIVES],
-  template: require('./app.html')
+  template: require('./app.html'),
+  styles: [
+    require('./styles/footer.scss'),
+    require('./styles/menu.scss')
+  ]
 })
 @RouteConfig([
   { path: '/', as: 'Home', component: Home },

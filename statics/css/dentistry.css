@@ -1,0 +1,231 @@
+hr {
+  border-top: 2px solid #eee;
+  width: 87%; }
+
+.top_margin {
+  margin-top: 15px; }
+
+.bigHeader {
+  font-size: 26px;
+  font-weight: bold;
+  color: #aa293c; }
+
+.hours {
+  font-size: 20px;
+  font-weight: bold;
+  color: #aa293c; }
+
+.smallHeader {
+  font-size: 21px;
+  font-weight: bold;
+  color: #535353; }
+
+.content {
+  font-size: 16px;
+  font-weight: normal;
+  color: #535353;
+  padding-top: 5px; }
+
+body {
+  font: 100% "Century Gothic", Helvetica, sans-serif; }
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px; } }
+@media (min-width: 1400px) {
+  .container {
+    width: 1270px; } }
+@media (min-width: 1500px) {
+  .container {
+    width: 1370px; } }
+#menu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #aa293c;
+  min-height: 95px;
+  font-size: 15px; }
+  #menu .navbar-brand img {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    margin-left: 10px; }
+  #menu .navbar-toggle {
+    margin-top: 15px; }
+  #menu .navbar-header .icon-bar {
+    background-color: #fff; }
+  #menu .navbar-nav {
+    background-color: #aa293c; }
+    #menu .navbar-nav .element :hover,
+    #menu .navbar-nav .element :active,
+    #menu .navbar-nav .element :focus,
+    #menu .navbar-nav .element :visited {
+      background-color: #99111c; }
+    #menu .navbar-nav .element a {
+      padding-top: 60px;
+      color: #fff; }
+    #menu .navbar-nav .dropdown :hover,
+    #menu .navbar-nav .dropdown :active,
+    #menu .navbar-nav .dropdown :focus,
+    #menu .navbar-nav .dropdown :visited {
+      background-color: #99111c; }
+    #menu .navbar-nav .dropdown a {
+      padding-top: 60px;
+      color: #fff; }
+    #menu .navbar-nav .dropdown .dropdown-menu {
+      border: none;
+      margin-top: 8px;
+      background-color: #aa293c; }
+      #menu .navbar-nav .dropdown .dropdown-menu li :hover,
+      #menu .navbar-nav .dropdown .dropdown-menu li :active,
+      #menu .navbar-nav .dropdown .dropdown-menu li :focus,
+      #menu .navbar-nav .dropdown .dropdown-menu li :visited {
+        background-color: #99111c; }
+      #menu .navbar-nav .dropdown .dropdown-menu li a {
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+  #menu .bottom {
+    width: 100%;
+    height: 8px;
+    background-color: #99111c; }
+  @media (max-width: 1060px) {
+    #menu {
+      position: relative;
+      float: right;
+      width: 100%;
+      min-height: 60px;
+      margin-bottom: 0px; }
+      #menu .container-fluid {
+        padding: 0;
+        width: 100%;
+        float: right;
+        position: absolute; }
+      #menu .navbar-header {
+        float: none;
+        margin-right: 0; }
+      #menu .navbar-toggle {
+        display: block; }
+      #menu .navbar-collapse {
+        min-width: 200px;
+        float: right;
+        margin-top: 0;
+        margin-right: 0;
+        border-top: 1 px solid #aa293c;
+        box-shadow: none; }
+      #menu .navbar-collapse.collapse {
+        display: none !important; }
+      #menu .navbar-nav {
+        float: none !important;
+        margin: 2px;
+        padding-bottom: 10px;
+        margin-right: -15px; }
+        #menu .navbar-nav .element a {
+          padding-right: 40px;
+          text-align: right;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          width: 100%; }
+        #menu .navbar-nav .dropdown a {
+          padding-right: 40px;
+          text-align: right;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          width: 100%; }
+        #menu .navbar-nav .open .dropdown-menu {
+          position: static;
+          float: none;
+          width: auto;
+          margin-top: 0;
+          background-color: transparent;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+          #menu .navbar-nav .open .dropdown-menu a {
+            padding-left: 30px; }
+      #menu .navbar-nav > li {
+        float: none;
+        width: 250px; }
+      #menu .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      #menu .navbar-text {
+        float: none;
+        margin: 15px 0; }
+      #menu .navbar-collapse.collapse.in {
+        display: block !important; }
+      #menu .collapsing {
+        overflow: hidden !important; }
+      #menu .bottom {
+        margin-top: 70px; } }
+
+#footer {
+  background-color: #535353;
+  color: #888;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 14px;
+  padding: 30px; }
+  #footer p {
+    margin: 0; }
+
+#orthodontics,
+#dentistry,
+#prosthetics {
+  margin-top: 30px;
+  margin-bottom: -30px;
+  padding: 30px; }
+  #orthodontics .smallHeader,
+  #dentistry .smallHeader,
+  #prosthetics .smallHeader {
+    margin-top: 40px;
+    margin-bottom: 0; }
+  #orthodontics #accordion,
+  #dentistry #accordion,
+  #prosthetics #accordion {
+    margin-top: 30px; }
+    #orthodontics #accordion .panel .panel-heading,
+    #dentistry #accordion .panel .panel-heading,
+    #prosthetics #accordion .panel .panel-heading {
+      color: #aa293c;
+      background-color: #eee;
+      border-color: #535353;
+      min-height: 60px; }
+      #orthodontics #accordion .panel .panel-heading .panel-title,
+      #dentistry #accordion .panel .panel-heading .panel-title,
+      #prosthetics #accordion .panel .panel-heading .panel-title {
+        text-decoration: none; }
+        #orthodontics #accordion .panel .panel-heading .panel-title a,
+        #dentistry #accordion .panel .panel-heading .panel-title a,
+        #prosthetics #accordion .panel .panel-heading .panel-title a {
+          font-weight: bold;
+          width: 100%;
+          line-height: 40px; }
+      #orthodontics #accordion .panel .panel-heading .panel-title a:hover,
+      #orthodontics #accordion .panel .panel-heading .panel-title a:active,
+      #orthodontics #accordion .panel .panel-heading .panel-title a:focus,
+      #dentistry #accordion .panel .panel-heading .panel-title a:hover,
+      #dentistry #accordion .panel .panel-heading .panel-title a:active,
+      #dentistry #accordion .panel .panel-heading .panel-title a:focus,
+      #prosthetics #accordion .panel .panel-heading .panel-title a:hover,
+      #prosthetics #accordion .panel .panel-heading .panel-title a:active,
+      #prosthetics #accordion .panel .panel-heading .panel-title a:focus {
+        text-decoration: none; }
+    #orthodontics #accordion .panel .panel-heading:hover,
+    #dentistry #accordion .panel .panel-heading:hover,
+    #prosthetics #accordion .panel .panel-heading:hover {
+      background-color: #ddd; }
+    #orthodontics #accordion .panel .panel-body,
+    #dentistry #accordion .panel .panel-body,
+    #prosthetics #accordion .panel .panel-body {
+      padding: 25px; }
+      #orthodontics #accordion .panel .panel-body ul,
+      #dentistry #accordion .panel .panel-body ul,
+      #prosthetics #accordion .panel .panel-body ul {
+        padding-left: 0;
+        margin-bottom: 20px; }
+        #orthodontics #accordion .panel .panel-body ul li,
+        #dentistry #accordion .panel .panel-body ul li,
+        #prosthetics #accordion .panel .panel-body ul li {
+          margin-left: 20px; }
+
+/*# sourceMappingURL=dentistry.css.map */
