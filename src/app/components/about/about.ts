@@ -6,10 +6,7 @@ import {Component, View} from 'angular2/angular2';
   selector: 'about'
 })
 @View({
-  template: require('./about.html'),
-  styles: [
-    require('./styles/about.scss')
-  ]
+  template: require('./about.html')
 })
 
 export class About { }

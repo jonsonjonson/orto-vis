@@ -24,6 +24,9 @@
     "src/app/bootstrap.ts",
     "src/app/components/about/about.ts",
     "src/app/components/contact/contact.ts",
+    "src/app/components/curedpatients/curedpatients.ts",
+    "src/app/components/dentistry/dentistry.ts",
+    "src/app/components/firstvisit/firstvisit.ts",
     "src/app/components/home/components/certificates/certificates.ts",
     "src/app/components/home/components/description/description.ts",
     "src/app/components/home/components/docplanner-banner/docplanner-banner.ts",
@@ -34,6 +37,8 @@
     "src/app/components/home/components/specialists/specialists.ts",
     "src/app/components/home/components/welcome-banner/welcome-banner.ts",
     "src/app/components/home/home.ts",
+    "src/app/components/orthodontics/orthodontics.ts",
+    "src/app/components/prosthetics/prosthetics.ts",
     "src/app/components/shared-components/main-carosuel/main-carosuel.ts"
   ],
   "atom": {

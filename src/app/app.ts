@@ -5,10 +5,17 @@ import {RouteConfig} from 'angular2/router';
 // Directives
 import {ROUTER_DIRECTIVES} from 'angular2/router';
 
-// components
+// Components
 import {Home} from './components/home/home';
 import {About} from './components/about/about';
+import {FirstVisit} from './components/firstvisit/firstvisit';
+import {Orthodontics} from './components/orthodontics/orthodontics';
+import {Dentistry} from './components/dentistry/dentistry';
+import {Prosthetics} from './components/prosthetics/prosthetics';
+import {CuredPatients} from './components/curedpatients/curedpatients';
 import {Contact} from './components/contact/contact';
+
+import {MainCarosuel} from './components/shared-components/main-carosuel/main-carosuel';
 
 
 
@@ -16,7 +23,10 @@ import {Contact} from './components/contact/contact';
   selector: 'app'
 })
 @View({
-  directives: [ROUTER_DIRECTIVES],
+  directives: [
+    ROUTER_DIRECTIVES,
+    MainCarosuel
+  ],
   template: require('./app.html'),
   styles: [
     require('./styles/main.scss'),
@@ -29,12 +39,17 @@ import {Contact} from './components/contact/contact';
     require('./styles/patients.scss'),
     require('./styles/prosthetics.scss')
   ],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None     // Turns off Angular's pseudo shadow DOM style encapsulation
 })
 @RouteConfig([
-  { path: '/', as: 'Home', component: Home },
-  { path: '/about', as: 'About', component: About },
-  { path: '/contact', as: 'Contact', component: Contact }
+  { path: '/',              as: 'Home',           component: Home },
+  { path: '/about',         as: 'About',          component: About },
+  { path: '/firstvisit',    as: 'FirstVisit',     component: FirstVisit },
+  { path: '/orthodontics',  as: 'Orthodontics',   component: Orthodontics },
+  { path: '/dentistry',     as: 'Dentistry',      component: Dentistry },
+  { path: '/prosthetics',   as: 'Prosthetics',    component: Prosthetics },
+  { path: '/curedpatients', as: 'CuredPatients',  component: CuredPatients },
+  { path: '/contact',       as: 'Contact',        component: Contact }
 ])
 
 export class App { }

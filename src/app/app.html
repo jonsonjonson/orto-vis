@@ -17,15 +17,15 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="element"><a [router-link]="['/Home']">STRONA GŁÓWNA</a></li>
         <li class="element"><a [router-link]="['/About']">O NAS</a></li>
-        <li class="element"><a href="#">PIERWSZA WIZYTA</a></li>
-        <li class="element"><a href="#">ORTODONCJA</a></li>
-        <li class="element"><a href="#">STOMATOLOGIA</a></li>
-        <li class="element"><a href="#">PROTETYKA</a></li>
+        <li class="element"><a [router-link]="['/FirstVisit']">PIERWSZA WIZYTA</a></li>
+        <li class="element"><a [router-link]="['/Orthodontics']">ORTODONCJA</a></li>
+        <li class="element"><a [router-link]="['/Dentistry']">STOMATOLOGIA</a></li>
+        <li class="element"><a [router-link]="['/Prosthetics']">PROTETYKA</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERIA <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">WYLECZENI PACJENCI</a></li>
-            <li><a href="#">CERTYFIKATY</a></li>
+            <li><a [router-link]="['/CuredPatients']">WYLECZENI PACJENCI</a></li>
+            <li><a>CERTYFIKATY</a></li>
           </ul>
         </li>
         <li class="element"><a [router-link]="['/Contact']">KONTAKT</a></li>
@@ -38,11 +38,8 @@
 </nav>
 
 
-
+<main-carosuel></main-carosuel>
 <router-outlet></router-outlet>
-
-
-
 <div id="footer">
   <div class="container">
     <div class="row">

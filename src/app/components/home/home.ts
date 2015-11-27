@@ -1,6 +1,5 @@
 import {Component, View} from 'angular2/angular2';
 
-import {MainCarosuel} from '../shared-components/main-carosuel/main-carosuel';
 import {WelcomeBanner} from './components/welcome-banner/welcome-banner';
 import {OfficeHours} from './components/officehours/officehours';
 import {DocplannerBanner} from './components/docplanner-banner/docplanner-banner';
@@ -16,7 +15,6 @@ import {Description} from './components/description/description';
 })
 @View({
   directives: [
-    MainCarosuel,
     WelcomeBanner,
     OfficeHours,
     DocplannerBanner,
