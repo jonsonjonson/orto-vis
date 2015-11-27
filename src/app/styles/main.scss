@@ -1,0 +1,268 @@
+$font-stack: 'Century Gothic', Helvetica, sans-serif;
+$primary-color: #aa293c;
+$hover-color: #99111c;
+$dark-grey: #535353;
+$light-grey: #eee;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin border-shadow($h-shadow, $v-shadow, $blur, $spread, $color ){
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+     -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+      -ms-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+          box-shadow: $h-shadow $v-shadow $blur $spread $color;
+}
+@mixin opacity($opacity){
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$opacity+")";
+            filter: alpha(opacity=$opacity);
+      -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+           opacity: $opacity;
+}
+@mixin rotate($deg){
+            transform:rotate($deg); 
+    -webkit-transform:rotate($deg); 
+       -moz-transform:rotate($deg); 
+         -o-transform:rotate($deg); 
+}
+@mixin grayscale($per){
+     -webkit-filter: grayscale($per);
+        -moz-filter: grayscale($per);
+          -o-filter: grayscale($per);
+         -ms-filter: grayscale($per);
+             filter: grayscale($per);
+}
+hr {
+    border-top: 2px solid #eee;
+    width: 87%;
+}
+.top_margin {
+margin-top: 15px;
+}
+
+.bigHeader {
+        font-size: 26px;
+        font-weight: bold;
+        color: $primary-color;
+}
+.hours {
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary-color;
+}
+.smallHeader {
+        font-size: 21px;
+        font-weight: bold;
+        color: $dark-grey;
+}
+.content {
+        font-size: 16px;
+        font-weight: normal;
+        color: $dark-grey;
+        padding-top: 5px;
+}
+   
+body {
+  font: 100% $font-stack;
+}
+
+@media (min-width: 1300px){
+    .container {
+    width: 1170px;
+    }
+}
+@media (min-width: 1400px){
+    .container {
+    width: 1270px;
+    }
+}
+@media (min-width: 1500px){
+    .container {
+    width: 1370px;
+    }
+}
+
+// ***************************************************************************** MENU
+
+
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index:100;
+    background-color: $primary-color;
+    min-height: 95px;
+    font-size: 15px;
+    .navbar-brand {
+        img {
+            position: absolute;
+            height: 200px;
+            width: auto;
+            margin-left: 10px;
+        }
+    }
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+    .navbar-header {
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+    .navbar-nav {
+        background-color: $primary-color;
+        .element{
+            :hover,
+            :active,
+            :focus,
+            :visited
+            {
+                background-color: $hover-color;
+            }
+            a {
+               padding-top: 60px;
+               color: #fff; 
+            }
+        }
+        
+        .dropdown {
+            :hover,
+            :active,
+            :focus,
+            :visited {
+                background-color: $hover-color;
+            }
+            a{
+                padding-top: 60px;
+                color: #fff;
+            }
+            .dropdown-menu {
+                border:none;
+                margin-top: 8px;
+                background-color: $primary-color;
+
+                li{
+                    :hover,
+                    :active,
+                    :focus,
+                    :visited {
+                        background-color: $hover-color;
+                    }
+                    a{
+                        font-size: 15px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        } 
+    }
+
+    .bottom {
+        width: 100%;
+        height: 8px;
+        background-color: $hover-color;
+    }
+    
+    @media (max-width: 1060px) {
+        position: relative;
+        float: right;
+        width: 100%;
+        min-height: 60px;
+        margin-bottom: 0px;
+        .container-fluid {
+            padding:0;
+            width: 100%;
+            float: right;
+            position: absolute;
+        }
+        .navbar-header {
+            float: none;
+            margin-right: 0;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            min-width: 200px;
+            float: right;
+            margin-top:0;
+            margin-right: 0;
+            border-top: 1 px solid $primary-color;
+            box-shadow: none;
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+            margin: 2px;
+            padding-bottom: 10px;
+            margin-right: -15px;
+            .element a {
+                padding-right: 40px;
+                text-align: right;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                width: 100%;
+            }
+            .dropdown a {
+                padding-right: 40px;
+                text-align: right;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                width: 100%;
+            }
+            .open .dropdown-menu {
+                position: static;
+                float: none;
+                width: auto;
+                margin-top: 0;
+                background-color: transparent;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                a {
+                    padding-left:30px; 
+                }
+            }
+        }
+        .navbar-nav>li {
+            float: none;
+            width: 250px;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .navbar-text {
+            float: none;
+            margin: 15px 0;
+        }
+        .navbar-collapse.collapse.in { 
+            display: block!important;
+        }
+        .collapsing {
+            overflow: hidden!important;
+        }
+        .bottom {
+            margin-top: 70px;
+        }
+    }
+}
+
+// ***************************************************************************** FOOTER
+#footer {
+    background-color: $dark-grey;
+    color: #888;
+    margin-top: 80px;
+    text-align: center;
+    
+    font-size: 14px;
+    padding: 30px;
+    p {
+        margin: 0;
+    }
+}

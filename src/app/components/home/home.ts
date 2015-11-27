@@ -24,10 +24,7 @@ import {Description} from './components/description/description';
     Certificates,
     Description
   ],
-  template: require('./home.html'),
-  styles: [
-    require('./styles/home.scss')
-  ]
+  template: require('./home.html')
 })
 
 export class Home { }
