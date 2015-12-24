@@ -29,17 +29,9 @@ import {MainCarosuel} from './components/shared-components/main-carosuel/main-ca
   ],
   template: require('./app.html'),
   styles: [
-    require('./styles/main.scss'),
-    require('./styles/about_us.scss'),
-    require('./styles/dentistry.scss'),
-    require('./styles/first_visit.scss'),
-    require('./styles/home.scss'),
-    require('./styles/images.scss'),
-    require('./styles/orthodontics.scss'),
-    require('./styles/patients.scss'),
-    require('./styles/prosthetics.scss')
-  ],
-  encapsulation: ViewEncapsulation.None     // Turns off Angular's pseudo shadow DOM style encapsulation
+    require('./styles/navbar.scss'),
+    require('./styles/footer.scss')
+  ]
 })
 @RouteConfig([
   { path: '/',              as: 'Home',           component: Home },
