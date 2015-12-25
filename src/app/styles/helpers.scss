@@ -1,14 +1,18 @@
 @import "variables";
 
 .ortovis-heading {
-  font-weight: bold;
-
-  &--lead {
+  &__title {
     color: $brand-primary;
     font-size: 26px;
+    font-weight: bold;
   }
-  &--small {
+  &__lead {
     color: $gray;
     font-size: 21px;
+    font-weight: bold;
   }
+}
+
+.ortovis-lead {
+  font-size: 18px;
 }

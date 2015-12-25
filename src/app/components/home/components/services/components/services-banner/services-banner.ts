@@ -6,7 +6,11 @@ import {Component, View} from 'angular2/angular2';
   selector: 'services-banner'
 })
 @View({
-  template: require('./services-banner.html')
+  template: require('./services-banner.html'),
+  styles: [
+    require('../../../../../../styles/helpers.scss'),
+    require('./styles/services-banner.scss')
+  ]
 })
 
 export class Banner { }
