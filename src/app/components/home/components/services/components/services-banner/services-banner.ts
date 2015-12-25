@@ -9,6 +9,7 @@ import {Component, View} from 'angular2/angular2';
   template: require('./services-banner.html'),
   styles: [
     require('../../../../../../styles/helpers.scss'),
+    require('../../../../../../styles/main.scss'),
     require('./styles/services-banner.scss')
   ]
 })

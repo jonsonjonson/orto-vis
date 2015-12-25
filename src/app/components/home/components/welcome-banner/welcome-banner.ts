@@ -8,7 +8,8 @@ import {Component, View} from 'angular2/angular2';
 @View({
   template: require('./welcome-banner.html'),
   styles: [
-    require('../../../../styles/helpers.scss')
+    require('../../../../styles/helpers.scss'),
+    require('../../../../styles/main.scss')
   ]
 })
 
