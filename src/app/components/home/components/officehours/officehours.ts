@@ -6,7 +6,10 @@ import {Component, View} from 'angular2/angular2';
   selector: 'officehours'
 })
 @View({
-  template: require('./officehours.html')
+  template: require('./officehours.html'),
+  styles: [
+    require('../../../../styles/helpers.scss')
+  ]
 })
 
 export class OfficeHours { }

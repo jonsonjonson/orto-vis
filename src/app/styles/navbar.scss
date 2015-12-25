@@ -1,165 +1,27 @@
 @import "variables";
 
-#menu {
-    position: fixed;
-    width: 100%;
-    z-index:100;
-    background-color: $brand-primary;
-    min-height: 95px;
-    font-size: 15px;
-    .navbar-brand {
-        img {
-            position: absolute;
-            height: 200px;
-            width: auto;
-            margin-left: 10px;
-        }
-    }
-    .navbar-toggle {
-        margin-top: 15px;
-    }
-    .navbar-header {
-        .icon-bar {
-            background-color: #fff;
-        }
-    }
-    .navbar-nav {
-        background-color: $brand-primary;
-        .element{
-            :hover,
-            :active,
-            :focus,
-            :visited
-            {
-                // background-color: $hover-color;
-            }
-            a {
-               padding-top: 60px;
-               color: #fff;
-            }
-        }
+.ortovis-menu {
+  $brand-primary--dark: darken($brand-primary, 5%);
 
-        .dropdown {
-            :hover,
-            :active,
-            :focus,
-            :visited {
-                // background-color: $hover-color;
-            }
-            a{
-                padding-top: 60px;
-                color: #fff;
-            }
-            .dropdown-menu {
-                border:none;
-                margin-top: 8px;
-                background-color: $brand-primary;
+  background-color: $brand-primary;
+  padding: 0px;
 
-                li{
-                    :hover,
-                    :active,
-                    :focus,
-                    :visited {
-                        // background-color: $hover-color;
-                    }
-                    a{
-                        font-size: 15px;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
-                    }
-                }
-            }
-        }
-    }
+  border-bottom: 7px solid $brand-primary--dark;
 
-    .bottom {
-        width: 100%;
-        height: 8px;
-        // background-color: $hover-color;
-    }
+  ul li {
+    margin: 0;
+  }
+  &__item {
+    padding: 10px 10px 5px 10px;
+  }
+  &__item:hover, &__item--active {
+    background-color: $brand-primary--dark;
+  }
+  &__item > a {
+    padding-top: 25px;
 
-    @media (max-width: 1060px) {
-        position: relative;
-        float: right;
-        width: 100%;
-        min-height: 60px;
-        margin-bottom: 0px;
-        .container-fluid {
-            padding:0;
-            width: 100%;
-            float: right;
-            position: absolute;
-        }
-        .navbar-header {
-            float: none;
-            margin-right: 0;
-        }
-        .navbar-toggle {
-            display: block;
-        }
-        .navbar-collapse {
-            min-width: 200px;
-            float: right;
-            margin-top:0;
-            margin-right: 0;
-            border-top: 1 px solid $brand-primary;
-            box-shadow: none;
-        }
-        .navbar-collapse.collapse {
-            display: none!important;
-        }
-        .navbar-nav {
-            float: none!important;
-            margin: 2px;
-            padding-bottom: 10px;
-            margin-right: -15px;
-            .element a {
-                padding-right: 40px;
-                text-align: right;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                width: 100%;
-            }
-            .dropdown a {
-                padding-right: 40px;
-                text-align: right;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                width: 100%;
-            }
-            .open .dropdown-menu {
-                position: static;
-                float: none;
-                width: auto;
-                margin-top: 0;
-                background-color: transparent;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                a {
-                    padding-left:30px;
-                }
-            }
-        }
-        .navbar-nav>li {
-            float: none;
-            width: 250px;
-        }
-        .navbar-nav>li>a {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .navbar-text {
-            float: none;
-            margin: 15px 0;
-        }
-        .navbar-collapse.collapse.in {
-            display: block!important;
-        }
-        .collapsing {
-            overflow: hidden!important;
-        }
-        .bottom {
-            margin-top: 70px;
-        }
+    &:link, &:hover, &:visited, &:active {
+      color: #fff;
     }
+  }
 }
