@@ -1,5 +1,9 @@
 @import "variables";
 
 .ortovis-container {
-  margin: 15px;
+  margin: 25px;
+
+  &--text-center {
+    text-align: center;
+  }
 }
