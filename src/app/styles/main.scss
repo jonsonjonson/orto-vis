@@ -10,4 +10,7 @@
   &--text-center {
     text-align: center;
   }
+  &--inverse {
+    background-color: $gray-lighter;
+  }
 }

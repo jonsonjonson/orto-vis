@@ -5,10 +5,14 @@ html {
 
 body {
   overflow-y: scroll;
+
   padding-top: 100px;
 
   /* Margin bottom by footer height */
   margin-bottom: 100px;
 
   font-family: "Century Gothic", Helvetica, sans-serif;
+
+  /* HACK */
+  overflow-x: hidden;
 }
