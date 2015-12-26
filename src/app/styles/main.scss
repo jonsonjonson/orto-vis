@@ -1,7 +1,11 @@
 @import "variables";
 
 .ortovis-container {
-  margin: 25px;
+  padding: 25px;
+  img {
+    display: block;
+    margin: auto;
+  }
 
   &--text-center {
     text-align: center;

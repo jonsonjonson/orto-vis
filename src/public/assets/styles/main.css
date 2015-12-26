@@ -1,4 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   overflow-y: scroll;
   padding-top: 100px;
+
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
