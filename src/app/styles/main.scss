@@ -14,3 +14,14 @@
     background-color: $gray-lighter;
   }
 }
+
+.ortovis-container-heading {
+  padding: 15px;
+
+  &--text-center {
+    text-align: center;
+  }
+  &--inverse {
+    background-color: darken($gray-lighter, 5%);
+  }
+}
