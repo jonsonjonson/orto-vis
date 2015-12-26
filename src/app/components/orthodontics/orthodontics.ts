@@ -6,7 +6,11 @@ import {Component, View} from 'angular2/angular2';
   selector: 'orthodontics'
 })
 @View({
-  template: require('./orthodontics.html')
+  template: require('./orthodontics.html'),
+  styles: [
+    require('../../styles/helpers.scss'),
+    require('../../styles/main.scss')
+  ]
 })
 
 export class Orthodontics { }
