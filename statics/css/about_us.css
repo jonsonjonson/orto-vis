@@ -32,12 +32,15 @@ body {
 @media (min-width: 1300px) {
   .container {
     width: 1170px; } }
+
 @media (min-width: 1400px) {
   .container {
     width: 1270px; } }
+
 @media (min-width: 1500px) {
   .container {
     width: 1370px; } }
+
 #menu {
   position: fixed;
   width: 100%;
@@ -172,5 +175,3 @@ body {
   margin-top: 30px;
   margin-bottom: -30px;
   padding: 30px; }
-
-/*# sourceMappingURL=about_us.css.map */

@@ -8,17 +8,68 @@
             width: 100%;
         }
     }
+    .textContent .text{
+        top: 95px;
+        left: 20px;
+        padding: 20px;
+        position: absolute;
+        background-color: rgba(65, 65, 65, 0.8);
+        height: 514px;
+        text-align: center;
+        .logo {
+            width: 65%;
+            height: autp;
+        }
+        img {
+            margin: 30px auto;
+        }
+        .bigHeader {
+            font-size: 20px;
+            color: #fff;
+        }
+        .smallHeader{
+            font-size: 14px;
+            color: #fff;
+        }
+        .content {
+            color: #fff;
+        }
+    }
     @media (max-width: 1060px) {
         padding-top: 75px;
         margin-top: 0px;
         .carousel-indicators {
             bottom: 0;
         }
+        .textContent .text{
+            top: 95px;
+            left: 20px;
+            padding: 15px;
+            position: absolute;
+            background-color: rgba(65, 65, 65, 0.8);
+            height: 514px;
+            text-align: center;
+        img {
+            margin-top: 20px;
+        }
+        .bigHeader {
+            font-size: 20px;
+            color: #fff;
+        }
+        .smallHeader{
+            color: #fff;
+        }
+        .content {
+            color: #fff;
+        }
     }
+    }
+    
 }
 
 // ***************************************************************************** SERVICES-IMG
 #services-img {
+    margin-top: 70px;
     width: 100%;
     background-color: $light-grey;
     padding: 50px 0 20px 0;
@@ -41,16 +92,25 @@
 #welcome {
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 30px;
     text-align: center;
-    
+    .hours {
+        margin: 15px;
+    }
+    .bold {
+        font-weight: bold;
+    }
     .content {
         margin-left: 50px;
         margin-right: 50px;
     }
     .smallHeader {
+        font-size: 18px;
         margin-top: 5px;
         margin-bottom: 15px;
+        font-weight: normal;
+        padding: 15px;
+        border: 1px solid #eee;
+        @include border-radius(5px);
     }
     
     p {

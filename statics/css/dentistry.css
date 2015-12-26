@@ -32,12 +32,15 @@ body {
 @media (min-width: 1300px) {
   .container {
     width: 1170px; } }
+
 @media (min-width: 1400px) {
   .container {
     width: 1270px; } }
+
 @media (min-width: 1500px) {
   .container {
     width: 1370px; } }
+
 #menu {
   position: fixed;
   width: 100%;
@@ -227,5 +230,3 @@ body {
         #dentistry #accordion .panel .panel-body ul li,
         #prosthetics #accordion .panel .panel-body ul li {
           margin-left: 20px; }
-
-/*# sourceMappingURL=dentistry.css.map */

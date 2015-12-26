@@ -32,12 +32,15 @@ body {
 @media (min-width: 1300px) {
   .container {
     width: 1170px; } }
+
 @media (min-width: 1400px) {
   .container {
     width: 1270px; } }
+
 @media (min-width: 1500px) {
   .container {
     width: 1370px; } }
+
 #menu {
   position: fixed;
   width: 100%;
@@ -173,14 +176,53 @@ body {
   #gallery .item img {
     height: 100%;
     width: 100%; }
+  #gallery .textContent .text {
+    top: 95px;
+    left: 20px;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(65, 65, 65, 0.8);
+    height: 514px;
+    text-align: center; }
+    #gallery .textContent .text .logo {
+      width: 65%;
+      height: autp; }
+    #gallery .textContent .text img {
+      margin: 30px auto; }
+    #gallery .textContent .text .bigHeader {
+      font-size: 20px;
+      color: #fff; }
+    #gallery .textContent .text .smallHeader {
+      font-size: 14px;
+      color: #fff; }
+    #gallery .textContent .text .content {
+      color: #fff; }
   @media (max-width: 1060px) {
     #gallery {
       padding-top: 75px;
       margin-top: 0px; }
       #gallery .carousel-indicators {
-        bottom: 0; } }
+        bottom: 0; }
+      #gallery .textContent .text {
+        top: 95px;
+        left: 20px;
+        padding: 15px;
+        position: absolute;
+        background-color: rgba(65, 65, 65, 0.8);
+        height: 514px;
+        text-align: center; }
+        #gallery .textContent .text img {
+          margin-top: 20px; }
+        #gallery .textContent .text .bigHeader {
+          font-size: 20px;
+          color: #fff; }
+        #gallery .textContent .text .smallHeader {
+          color: #fff; }
+        #gallery .textContent .text .content {
+          color: #fff; } }
 
 #services-img {
+  margin-top: 70px;
   width: 100%;
   background-color: #eee;
   padding: 50px 0 20px 0; }
@@ -202,14 +244,25 @@ body {
 #welcome {
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 30px;
   text-align: center; }
+  #welcome .hours {
+    margin: 15px; }
+  #welcome .bold {
+    font-weight: bold; }
   #welcome .content {
     margin-left: 50px;
     margin-right: 50px; }
   #welcome .smallHeader {
+    font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-weight: normal;
+    padding: 15px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
   #welcome p {
     margin-bottom: 0px; }
   @media (max-width: 1000px) {
@@ -323,5 +376,3 @@ body {
       opacity: 1; }
   #certificates .slick-list {
     margin: 0 20px; }
-
-/*# sourceMappingURL=home.css.map */
