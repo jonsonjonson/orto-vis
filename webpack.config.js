@@ -83,7 +83,6 @@ module.exports = {
     alias: {
       'rx': '@reactivex/rxjs',
 
-      'root': 'src/app',
       'common': 'src/app/common'
       // 'bindings': 'src/bindings',
       // 'components': 'src/app/components'
