@@ -1,5 +1,9 @@
 @import "variables";
 
+ul li>i {
+  color: $brand-primary;
+}
+
 .ortovis-container {
   padding: 25px;
   img {

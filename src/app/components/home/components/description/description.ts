@@ -8,8 +8,8 @@ import {Component, View} from 'angular2/angular2';
 @View({
   template: require('./description.html'),
   styles: [
-    require('root/styles/helpers.scss'),
-    require('root/styles/main.scss')
+    require('common/styles/helpers.scss'),
+    require('common/styles/main.scss')
   ]
 })
 

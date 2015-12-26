@@ -1,27 +1,41 @@
-@import "variables";
+@import "~common/styles/variables";
 
 .ortovis-menu {
-  $brand-primary--dark: darken($brand-primary, 5%);
-
-  background-color: $brand-primary;
+  background-color: $navbar-default-bg;
+  border-bottom: 7px solid $navbar-default-border;
+  color: $navbar-default-link-color;
   padding: 0px;
 
-  border-bottom: 7px solid $brand-primary--dark;
-
-  ul li {
+  & ul li {
     margin: 0;
   }
   &__item {
     padding: 10px 10px 5px 10px;
-  }
-  &__item:hover, &__item--active {
-    background-color: $brand-primary--dark;
-  }
-  &__item > a {
-    padding-top: 25px;
+    &:hover, &--active {
+      color: $navbar-default-link-hover-color;
+      background-color: $navbar-default-link-hover-bg;
+    }
+    & > a {
+      padding-top: 25px;
 
-    &:link, &:hover, &:visited, &:active {
-      color: #fff;
+      &:link, &:hover, &:visited, &:active {
+        color: $navbar-default-link-color;
+      }
+    }
+  }
+}
+
+.ortovis-menu-dropdown {
+  background-color: $dropdown-bg;
+  color: $dropdown-link-color;
+  border: none;
+  border-radius: 0;
+
+  &__item {
+    color: $dropdown-link-hover-color;
+    background-color: $dropdown-bg;
+    &:hover {
+      background-color: $dropdown-link-hover-bg;
     }
   }
 }
