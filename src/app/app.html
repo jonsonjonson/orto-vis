@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <nav class="ortovis-menu navbar navbar-fixed-top">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav pull-xs-right">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-toggleable-xs pull-xs-right" id="navbar">
+    <ul class="nav navbar-nav">
       <li class="ortovis-menu__item ortovis-menu__item--active nav-item">
         <a class="nav-link" [router-link]="['/Home']">STRONA GŁÓWNA</a>
       </li>
