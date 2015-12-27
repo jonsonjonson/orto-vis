@@ -1,0 +1,7 @@
+@mixin grayscale($percentage){
+     -webkit-filter: grayscale($percentage);
+        -moz-filter: grayscale($percentage);
+          -o-filter: grayscale($percentage);
+         -ms-filter: grayscale($percentage);
+             filter: grayscale($percentage);
+}
