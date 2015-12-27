@@ -21,10 +21,11 @@ export class MainCarousel {
       loop: true,
 
       autoplay: true,
-      autoplayTimeout: 7500,
+      autoplayTimeout: 15000,
       autoplayHoverPause: true,
 
-      animateOut: 'fadeOut'
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn'
     })
   }
 }
