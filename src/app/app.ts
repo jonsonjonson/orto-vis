@@ -16,7 +16,7 @@ import {Prosthetics} from './components/prosthetics/prosthetics';
 import {CuredPatients} from './components/curedpatients/curedpatients';
 import {Contact} from './components/contact/contact';
 
-import {MainCarosuel} from './components/shared-components/main-carosuel/main-carosuel';
+import {MainCarousel} from './components/shared-components/main-carosuel/main-carousel';
 
 
 
@@ -27,7 +27,7 @@ import {MainCarosuel} from './components/shared-components/main-carosuel/main-ca
   directives: [
     ROUTER_DIRECTIVES,
     NgClass,
-    MainCarosuel
+    MainCarousel
   ],
   template: require('./app.html'),
   styles: [

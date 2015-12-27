@@ -39,7 +39,7 @@
     "src/app/components/home/home.ts",
     "src/app/components/orthodontics/orthodontics.ts",
     "src/app/components/prosthetics/prosthetics.ts",
-    "src/app/components/shared-components/main-carosuel/main-carosuel.ts"
+    "src/app/components/shared-components/main-carosuel/main-carousel.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
