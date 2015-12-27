@@ -17,5 +17,8 @@
     "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
     "bootstrap": "v4.0.0-alpha.2",
     "font-awesome": "fontawesome#~4.5.0"
+  },
+  "devDependencies": {
+    "animate.css": "~3.5.0"
   }
 }
