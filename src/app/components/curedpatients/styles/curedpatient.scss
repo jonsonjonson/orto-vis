@@ -2,5 +2,14 @@
 @import "~common/styles/mixins";
 
 .ortovis-curedpatient {
-  margin: 5px;
+  margin: 2.5%;
+
+  & > .row {
+    margin-right: 0;
+    margin-left: 0;
+    & > [class^="col-"], & > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
