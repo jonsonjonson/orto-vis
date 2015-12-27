@@ -10,7 +10,6 @@ import {Component, View} from 'angular2/angular2';
   styles: [
     require('common/styles/helpers.scss'),
     require('common/styles/main.scss'),
-    require('./styles/curedpatient.scss'),
     require('./styles/curedpatients-gallery.scss')
   ]
 })
