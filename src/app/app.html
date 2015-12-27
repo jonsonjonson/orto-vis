@@ -5,33 +5,33 @@
   </button>
   <div class="collapse navbar-toggleable-xs pull-xs-right" id="navbar">
     <ul class="nav navbar-nav text-uppercase">
-      <li class="ortovis-menu__item ortovis-menu__item--active nav-item">
-        <a class="nav-link" [router-link]="['/Home']">Strona Główna</a>
+      <li [ng-class]="state['Home']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('Home')" class="nav-link" [router-link]="['/Home']">Strona Główna</a>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/About']">O nas</a>
+      <li [ng-class]="state['About']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('About')" class="nav-link" [router-link]="['/About']">O nas</a>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/FirstVisit']">Pierwsza wizyta</a>
+      <li [ng-class]="state['FirstVisit']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('FirstVisit')" class="nav-link" [router-link]="['/FirstVisit']">Pierwsza wizyta</a>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/Orthodontics']">Ortodoncja</a>
+      <li [ng-class]="state['Orthodontics']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('Orthodontics')" class="nav-link" [router-link]="['/Orthodontics']">Ortodoncja</a>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/Dentistry']">Stomatologia</a>
+      <li [ng-class]="state['Dentistry']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('Dentistry')" class="nav-link" [router-link]="['/Dentistry']">Stomatologia</a>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/Prosthetics']">Protetyka</a>
+      <li [ng-class]="state['Prosthetics']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('Prosthetics')" class="nav-link" [router-link]="['/Prosthetics']">Protetyka</a>
       </li>
-      <li class="ortovis-menu__item nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria <span class="caret"></span></a>
+      <li [ng-class]="state['Gallery']" class="ortovis-menu__item nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria<span class="caret"></span></a>
         <div class="ortovis-menu-dropdown dropdown-menu">
-          <a class="ortovis-menu-dropdown__item dropdown-item" [router-link]="['/CuredPatients']">Wyleczeni pacjenci</a>
-          <a class="ortovis-menu-dropdown__item dropdown-item">Certyfikaty</a>
+          <a (click)="activate('Gallery')" class="ortovis-menu-dropdown__item dropdown-item" [router-link]="['/CuredPatients']">Wyleczeni pacjenci</a>
+          <a (click)="activate('Gallery')" class="ortovis-menu-dropdown__item dropdown-item">Certyfikaty</a>
         </div>
       </li>
-      <li class="ortovis-menu__item nav-item">
-        <a class="nav-link" [router-link]="['/Contact']">Kontakt</a>
+      <li [ng-class]="state['Contact']" class="ortovis-menu__item nav-item">
+        <a (click)="activate('Contact')" class="nav-link" [router-link]="['/Contact']">Kontakt</a>
       </li>
     </ul>
   </div>
