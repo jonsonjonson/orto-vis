@@ -2,6 +2,7 @@
 
 .ortovis-carousel {
   position: relative;
+  text-shadow: 1px 1px 3px $gray-dark;
 
   & img {
     max-height: 550px;
@@ -45,5 +46,35 @@
         display: block;
       }
     }
+  }
+
+  &__side-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    animation: slideInRight 0.5s;
+
+    padding: 15px;
+
+    height: 100%;
+    width: 25%;
+
+    color: $gray-lighter;
+    background-color: rgba(0, 0, 0, 0.5);
+    & > .docplanner {
+      position: absolute;
+      z-index: 5;
+      bottom: 10px;
+    }
+  }
+}
+
+
+.ortovis-officehours-table {
+  width: 100%;
+  & td {
+    padding: 0 10px;
   }
 }

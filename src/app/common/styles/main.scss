@@ -29,3 +29,7 @@ ul li>i {
     background-color: darken($gray-lighter, 5%);
   }
 }
+
+.ortovis-content {
+  animation: fadeIn 1s;
+}
