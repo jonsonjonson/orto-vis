@@ -39,15 +39,15 @@ declare var jQuery: any;
   ]
 })
 @RouteConfig([
-  { path: '/home', as: 'Home', component: Home },
-  { path: '/about', as: 'About', component: About },
-  { path: '/firstvisit', as: 'FirstVisit', component: FirstVisit },
-  { path: '/orthodontics', as: 'Orthodontics', component: Orthodontics },
-  { path: '/dentistry', as: 'Dentistry', component: Dentistry },
-  { path: '/prosthetics', as: 'Prosthetics', component: Prosthetics },
-  { path: '/curedpatients', as: 'CuredPatients', component: CuredPatients },
-  { path: '/certificates', as: 'Certificates', component: Certificates },
-  { path: '/contact', as: 'Contact', component: Contact }
+  { path: '/ ', as: 'Home', component: Home },
+  { path: '/o-nas', as: 'About', component: About },
+  { path: '/pierwsza-wizyta', as: 'FirstVisit', component: FirstVisit },
+  { path: '/ortodoncja', as: 'Orthodontics', component: Orthodontics },
+  { path: '/stomatologia', as: 'Dentistry', component: Dentistry },
+  { path: '/protetyka', as: 'Prosthetics', component: Prosthetics },
+  { path: '/wyleczeni-pacjenci', as: 'CuredPatients', component: CuredPatients },
+  { path: '/certyfikaty', as: 'Certificates', component: Certificates },
+  { path: '/kontakt', as: 'Contact', component: Contact }
 ])
 
 export class App {
