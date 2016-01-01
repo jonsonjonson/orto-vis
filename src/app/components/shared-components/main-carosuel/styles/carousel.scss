@@ -3,6 +3,8 @@
 .ortovis-carousel {
   position: relative;
   text-shadow: 1px 1px 3px $gray-dark;
+  overflow: hidden;
+  animation: fadeIn 0.5s;
 
   & img {
     max-height: 550px;
@@ -19,9 +21,9 @@
     padding: 0 3%;
     color: $gray-lighter;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 
-    animation: fadeIn 1s;
+    animation: slideInUp 0.5s;
 
     & .logo {
       float: left;
@@ -62,11 +64,12 @@
     width: 25%;
 
     color: $gray-lighter;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     & > .docplanner {
       position: absolute;
       z-index: 5;
       bottom: 10px;
+      opacity: 0.75;
     }
   }
 }
@@ -75,6 +78,6 @@
 .ortovis-officehours-table {
   width: 100%;
   & td {
-    padding: 0 10px;
+    padding: 3px 10px;
   }
 }
