@@ -27,6 +27,6 @@ export class MainCarousel {
 
       animateOut: 'fadeOut',
       animateIn: 'fadeIn'
-    })
+    });
   }
 }
