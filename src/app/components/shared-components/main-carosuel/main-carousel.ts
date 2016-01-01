@@ -19,10 +19,11 @@ export class MainCarousel {
       .owlCarousel({
       items: 1,
       loop: true,
+      lazyLoad: true,
 
       autoplay: true,
-      autoplayTimeout: 15000,
-      autoplayHoverPause: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: false,
 
       animateOut: 'fadeOut',
       animateIn: 'fadeIn'
