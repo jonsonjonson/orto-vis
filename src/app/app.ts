@@ -56,18 +56,20 @@ export class App {
 
 
     if (item == "Home") {
-      // jQuery('.ortovis-carousel__title-bar').show();
+      jQuery('.ortovis-officehours-table').show('fast');
+      jQuery('.ortovis-carousel__title-bar').show('fast');
       jQuery('.ortovis-carousel').animate({
         'height': 550
       }, 350, function() {
-          jQuery(this).find('.owl-carousel').height(550);
+          jQuery('.owl-carousel').height(550);
         });
     } else {
+      jQuery('.ortovis-officehours-table').hide('fast');
+      jQuery('.ortovis-carousel__title-bar').hide('fast');
       jQuery('.ortovis-carousel').animate({
         'height': 75
       }, 350, function() {
-          jQuery(this).find('.owl-carousel').height(75);
-          // jQuery(this).find('.ortovis-carousel__title-bar').hide();
+          jQuery('.owl-carousel').height(75);
         });
     }
   }
