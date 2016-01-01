@@ -39,7 +39,7 @@ declare var jQuery: any;
   ]
 })
 @RouteConfig([
-  { path: '/ ', as: 'Home', component: Home },
+  { path: '/', as: 'Home', component: Home },
   { path: '/o-nas', as: 'About', component: About },
   { path: '/pierwsza-wizyta', as: 'FirstVisit', component: FirstVisit },
   { path: '/ortodoncja', as: 'Orthodontics', component: Orthodontics },
