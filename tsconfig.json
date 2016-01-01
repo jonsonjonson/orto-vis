@@ -23,6 +23,7 @@
     "src/app/app.ts",
     "src/app/bootstrap.ts",
     "src/app/components/about/about.ts",
+    "src/app/components/certificates/certificates.ts",
     "src/app/components/contact/contact.ts",
     "src/app/components/curedpatients/curedpatients.ts",
     "src/app/components/dentistry/dentistry.ts",

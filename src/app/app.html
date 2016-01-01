@@ -27,7 +27,7 @@
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria<span class="caret"></span></a>
         <div class="ortovis-menu-dropdown dropdown-menu">
           <a (click)="activate('Gallery')" class="ortovis-menu-dropdown__item dropdown-item" [router-link]="['/CuredPatients']">Wyleczeni pacjenci</a>
-          <a (click)="activate('Gallery')" class="ortovis-menu-dropdown__item dropdown-item">Certyfikaty</a>
+          <a (click)="activate('Gallery')" class="ortovis-menu-dropdown__item dropdown-item" [router-link]="['/Certificates']">Certyfikaty</a>
         </div>
       </li>
       <li [ng-class]="state['Contact']" class="ortovis-menu__item nav-item">

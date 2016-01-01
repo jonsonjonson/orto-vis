@@ -14,6 +14,7 @@ import {Orthodontics} from './components/orthodontics/orthodontics';
 import {Dentistry} from './components/dentistry/dentistry';
 import {Prosthetics} from './components/prosthetics/prosthetics';
 import {CuredPatients} from './components/curedpatients/curedpatients';
+import {Certificates} from './components/certificates/certificates';
 import {Contact} from './components/contact/contact';
 
 import {MainCarousel} from './components/shared-components/main-carosuel/main-carousel';
@@ -45,6 +46,7 @@ declare var jQuery: any;
   { path: '/dentistry', as: 'Dentistry', component: Dentistry },
   { path: '/prosthetics', as: 'Prosthetics', component: Prosthetics },
   { path: '/curedpatients', as: 'CuredPatients', component: CuredPatients },
+  { path: '/certificates', as: 'Certificates', component: Certificates },
   { path: '/contact', as: 'Contact', component: Contact }
 ])
 
@@ -65,7 +67,7 @@ export class App {
         });
     } else {
       jQuery('.ortovis-officehours-table').hide('fast');
-      jQuery('.ortovis-carousel__title-bar').hide('fast');
+      jQuery('.ortovis-carousel__title-bar').hide();
       jQuery('.ortovis-carousel').animate({
         'height': 75
       }, 350, function() {

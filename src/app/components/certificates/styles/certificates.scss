@@ -1,0 +1,20 @@
+@import "~common/styles/variables";
+
+.ortovis-certificates {
+  padding: 10px;
+  text-align: center;
+
+  &__image {
+    margin: 5px;
+    height: 200px;
+  }
+}
+
+.ortovis-certificates-modal {
+  &__dialog {
+    width: 75%;
+  }
+  &__image {
+    width: 100%;
+  }
+}
