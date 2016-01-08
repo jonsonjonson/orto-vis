@@ -21,7 +21,7 @@
     padding: 0 3%;
     color: $gray-lighter;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 
     animation: slideInUp 0.5s;
 
@@ -64,10 +64,11 @@
     width: 25%;
 
     color: $gray-lighter;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     & > .docplanner {
       position: absolute;
       z-index: 5;
+      right: 15px;
       bottom: 10px;
       opacity: 0.75;
     }
