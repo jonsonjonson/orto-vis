@@ -35,7 +35,7 @@ module.exports = {
     colors: true,
     historyApiFallback: true,
     contentBase: 'src/public/',
-    publicPath: '/__build__'
+    publicPath: '/'
   },
 
   //
@@ -114,8 +114,15 @@ module.exports = {
       // support for .html as raw text
       {
         test: /\.html$/,
-        loader: 'raw'
+        loader: 'html?attrs=img:src img:data-src img:data-src-retina'
       },
+
+      // support for images as raw text
+      {
+        test: /\.(gif|png|jpe?g|svg)$/,
+        loader: 'url?limit=10000'
+      },
+
 
       // Support for .ts files.
       {
