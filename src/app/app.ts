@@ -17,7 +17,7 @@ import {CuredPatients} from './components/curedpatients/curedpatients';
 import {Certificates} from './components/certificates/certificates';
 import {Contact} from './components/contact/contact';
 
-import {MainCarousel} from './common/components/shared-components/main-carosuel/main-carousel';
+import {MainCarousel} from './common/components/main-carosuel/main-carousel';
 
 declare var jQuery: any;
 
