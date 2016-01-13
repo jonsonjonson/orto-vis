@@ -60,6 +60,7 @@ export class App {
     if (item == "Home") {
       jQuery('.ortovis-officehours-table').show('fast');
       jQuery('.ortovis-carousel__title-bar').show('fast');
+      jQuery('.contact').show('fast');
       jQuery('.ortovis-carousel').animate({
         'height': 550
       }, 350, function() {
@@ -67,7 +68,8 @@ export class App {
         });
     } else {
       jQuery('.ortovis-officehours-table').hide('fast');
-      jQuery('.ortovis-carousel__title-bar').hide();
+      jQuery('.ortovis-carousel__title-bar').hide('fast');
+      jQuery('.contact').hide('fast');
       jQuery('.ortovis-carousel').animate({
         'height': 75
       }, 350, function() {

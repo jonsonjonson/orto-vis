@@ -53,7 +53,7 @@
   &__side-bar {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     z-index: 1;
 
     animation: slideInRight 0.75s;
@@ -65,16 +65,49 @@
 
     color: $gray-lighter;
     background-color: rgba(0, 0, 0, 0.5);
-    & > .docplanner {
-      position: absolute;
-      z-index: 5;
-      right: 15px;
-      bottom: 10px;
-      opacity: 0.75;
-    }
-    & > .contact {
-      margin: 100px 25px;
-    }
+
+    .ortovis-officehours-table {
+            th{
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+            tr {
+                .hour, .day {
+                    width: 50%;
+                    text-align: center;
+                    font-size: 16px;
+                }
+                .hour {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        & > .docplanner {
+          position: absolute;
+          z-index: 5;
+          bottom: 25px;
+          right: 25px;
+          opacity: 0.75;
+        }
+        & > .contact {
+          text-align: center;
+          margin-top: 25px;
+          .title {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 5px;
+          }
+          .phone {
+              font-size: 22px;
+              font-weight: bold;
+              margin: 5px;
+          }
+        }
   }
 }
 
