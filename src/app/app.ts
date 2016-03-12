@@ -52,16 +52,29 @@ declare var jQuery: any;
 
 export class App {
   constructor() {
-    this.carouselMaxHeight = jQuery('.ortovis-carousel').height();
-    // console.log(this.carouselMaxHeight);
+    jQuery(document).scroll(function() {
+      if (jQuery(this).scrollTop() > 25) {
+          jQuery('.ortovis-menu').removeClass('navbar-static-top');
+          jQuery('.ortovis-menu').addClass('navbar-fixed-top');
+          jQuery('.ortovis-menu').css({'margin-top': '-30px'});
+          jQuery('.ortovis-menu').css({ 'opacity': 1 - ( 1.75 * Math.atan(jQuery(this).scrollTop() * 0.001)/Math.PI ) });
+          jQuery('.ortovis-menu__toggler').css({'margin-top': '30px'});
+      }
+      else {
+        jQuery('.ortovis-menu').removeClass('navbar-fixed-top');
+        jQuery('.ortovis-menu').addClass('navbar-static-top');
+        jQuery('.ortovis-menu').css({'margin-top': '0'});
+        jQuery('.ortovis-menu').css({'opacity': '1'});
+        jQuery('.ortovis-menu__toggler').css({'margin-top': '0'});
+      }
+    });
   }
 
-  carouselMaxHeight: number;
   state: { [item: string]: string; } = {};
   activate(item) {
     this.state = {};
     this.state[item] = "ortovis-menu__item--active";
-console.warn(this.carouselMaxHeight);
+
     if (item == "Home") {
       jQuery('.ortovis-carousel__title-bar').fadeIn('fast');
       jQuery('.ortovis-officehours-table').show('fast');

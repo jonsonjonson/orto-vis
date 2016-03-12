@@ -6,6 +6,7 @@
   color: $navbar-default-link-color;
   padding: 0px;
   border-radius: 0;
+  z-index: 9;
 
   & .description {
     color: darken($navbar-default-bg, 6.5%)
