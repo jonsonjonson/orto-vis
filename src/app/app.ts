@@ -53,9 +53,10 @@ declare var jQuery: any;
 export class App {
   constructor() {
     jQuery(document).scroll(function() {
-      if (jQuery(this).scrollTop() > 25) {
+      if (jQuery(this).scrollTop() > jQuery('.ortovis-menu').height() - jQuery('.ortovis-menu').height() * 0.75) {
           jQuery('.ortovis-menu').removeClass('navbar-static-top');
           jQuery('.ortovis-menu').addClass('navbar-fixed-top');
+          jQuery('body').css({'padding-top': jQuery('.ortovis-menu').height()});
           jQuery('.ortovis-menu').css({'margin-top': '-30px'});
           jQuery('.ortovis-menu').css({ 'opacity': 1 - ( 0.25 * Math.atan(jQuery(this).scrollTop() * 0.005)/Math.PI ) });
           jQuery('.ortovis-menu__toggler').css({'margin-top': '30px'});
@@ -63,6 +64,7 @@ export class App {
       else {
         jQuery('.ortovis-menu').removeClass('navbar-fixed-top');
         jQuery('.ortovis-menu').addClass('navbar-static-top');
+        jQuery('body').css({'padding-top': '0'});
         jQuery('.ortovis-menu').css({'margin-top': '0'});
         jQuery('.ortovis-menu').css({'opacity': '1'});
         jQuery('.ortovis-menu__toggler').css({'margin-top': '0'});
