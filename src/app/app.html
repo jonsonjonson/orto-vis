@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <nav class="ortovis-menu navbar navbar-static-top">
-  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar">
-    <i class="fa fa-bars"></i>
-  </button>
+  <div class="hidden-lg-up">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+       <i class="fa fa-bars"></i>
+    </button>
+    <div class="pull-xs-right">
+      <span class="lead">Orto - Vis</span> <span class="description">stomatologia Ortodoncja</span>
+    </div>
+  </div>
   <div class="collapse navbar-toggleable-md pull-xs-right" id="navbar">
     <ul class="nav navbar-nav text-uppercase">
       <li [ng-class]="state['Home']" class="ortovis-menu__item nav-item">

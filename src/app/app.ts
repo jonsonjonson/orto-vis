@@ -51,30 +51,33 @@ declare var jQuery: any;
 ])
 
 export class App {
+  constructor() {
+    this.carouselMaxHeight = jQuery('.ortovis-carousel').height();
+    // console.log(this.carouselMaxHeight);
+  }
+
+  carouselMaxHeight: number;
   state: { [item: string]: string; } = {};
   activate(item) {
     this.state = {};
     this.state[item] = "ortovis-menu__item--active";
-
-
+console.warn(this.carouselMaxHeight);
     if (item == "Home") {
+      jQuery('.ortovis-carousel__title-bar').fadeIn('fast');
       jQuery('.ortovis-officehours-table').show('fast');
-      jQuery('.ortovis-carousel__title-bar').show('fast');
       jQuery('.contact').show('fast');
       jQuery('.ortovis-carousel').animate({
-        'height': 550
-      }, 350, function() {
-          jQuery('.owl-carousel').height(550);
-        });
+        'height': '41vw',
+        // 'max-height': 550
+      }, 350);
     } else {
       jQuery('.ortovis-officehours-table').hide('fast');
-      jQuery('.ortovis-carousel__title-bar').hide('fast');
+      jQuery('.ortovis-carousel__title-bar').fadeOut('fast');
       jQuery('.contact').hide('fast');
       jQuery('.ortovis-carousel').animate({
-        'height': 75
-      }, 350, function() {
-          jQuery('.owl-carousel').height(75);
-        });
+        'height': '10vh',
+        // 'max-height': 75
+      }, 350);
     }
   }
 }
