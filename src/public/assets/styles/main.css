@@ -5,12 +5,12 @@ html {
 body {
   overflow-y: scroll;
   color: #555;
-  padding-top: 78px;
+  /*padding-top: 0px;*/
   /* Margin bottom by footer height */
   margin-bottom: 100px;
   font-family: "Century Gothic", Helvetica, sans-serif;
   /* HACK */
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 .modal-open {
     /*overflow-y: scroll !important;*/
