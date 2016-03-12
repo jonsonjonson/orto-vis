@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 .modal-open {
-    overflow-y: scroll !important;
+    /*overflow-y: scroll !important;*/
     overflow-x: hidden;
     margin-right: -17px;
 }

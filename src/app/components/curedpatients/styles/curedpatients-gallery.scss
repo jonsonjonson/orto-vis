@@ -4,25 +4,22 @@
 
 .ortovis-curedpatient {
   margin: 2.5%;
-  box-shadow: 1px 1px 7px lighten($gray-light, 25%);
+  box-shadow: 1px 1px 7px darken($gray-lighter, 5%);
+  overflow: hidden;
 
   & img {
     padding: 3px;
     border: 1px solid darken($gray-lighter, 5%);
   }
-  & > .row {
-    margin-right: 0;
-    margin-left: 0;
-    & > [class^="col-"], & > [class*=" col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
   &__image {
     position: relative;
+    float: left;
+    width: 50%;
 
     & img {
-      @include grayscale(75%);
+      @include whiten(0%);
+      object-fit: contain;
+      object-position: center;
     }
     & img:last-child {
       position: absolute;
@@ -30,9 +27,9 @@
       opacity: 0;
     }
     & img:last-child:hover {
+      @include whiten(100%);
       transition-duration: 0.5s;
       opacity: 1;
-      @include grayscale(0%);
     }
   }
 }

@@ -1,7 +1,37 @@
-@mixin grayscale($percentage){
-     -webkit-filter: grayscale($percentage);
-        -moz-filter: grayscale($percentage);
-          -o-filter: grayscale($percentage);
-         -ms-filter: grayscale($percentage);
-             filter: grayscale($percentage);
+@mixin whiten($percentage) {
+    $grayscaleValue: 75% - ($percentage * 0.75);
+    $sepiaValue: 25% - ($percentage * 0.25);
+    $brightnessValue: 100% + ($percentage * 0.25);
+    $contrastValue: 100% - ($percentage * 0.25);
+    $saturateValue: 100% - ($percentage * 0.25);
+    filter:
+      grayscale($grayscaleValue)
+      sepia($sepiaValue)
+      brightness($brightnessValue)
+      contrast($contrastValue)
+      saturate($saturateValue);
+    -webkit-filter:
+      grayscale($grayscaleValue)
+      sepia($sepiaValue)
+      brightness($brightnessValue)
+      contrast($contrastValue)
+      saturate($saturateValue);
+    -moz-filter:
+      grayscale($grayscaleValue)
+      sepia($sepiaValue)
+      brightness($brightnessValue)
+      contrast($contrastValue)
+      saturate($saturateValue);
+    -o-filter:
+      grayscale($grayscaleValue)
+      sepia($sepiaValue)
+      brightness($brightnessValue)
+      contrast($contrastValue)
+      saturate($saturateValue);
+    -ms-filter:
+      grayscale($grayscaleValue)
+      sepia($sepiaValue)
+      brightness($brightnessValue)
+      contrast($contrastValue)
+      saturate($saturateValue);
 }
