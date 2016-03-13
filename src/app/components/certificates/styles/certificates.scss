@@ -11,10 +11,15 @@
 }
 
 .ortovis-certificates-modal {
+  // overflow-y: scroll;
   &__dialog {
-    width: 75%;
+    text-align: center;
+    // min-width: 25%;
+    animation: zoomIn 0.25s;
+
   }
   &__image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 90vh;
   }
 }
