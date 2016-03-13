@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "start": "webpack-dev-server --port 3000",
-    "build": "webpack --devtool=source-map --optimize-minimize"
+    "build": "webpack --devtool=source-map --optimize-minimize",
+    "build:dev": "webpack --devtool=eval"
   },
   "keywords": [],
   "author": "",

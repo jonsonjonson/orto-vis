@@ -23,7 +23,7 @@ export class MainCarousel {
 
       autoplay: true,
       autoplayTimeout: 5000,
-      autoplayHoverPause: false,
+      autoplayHoverPause: true,
 
       animateOut: 'fadeOut',
       animateIn: 'fadeIn'
