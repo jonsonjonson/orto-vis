@@ -8,6 +8,12 @@
   border-radius: 0;
   z-index: 9;
 
+  & .navbar-toggler {
+    position: fixed;
+    background-color: $navbar-default-border;
+    border-radius: 0;
+  }
+
   & .description {
     color: darken($navbar-default-bg, 6.5%)
   }
