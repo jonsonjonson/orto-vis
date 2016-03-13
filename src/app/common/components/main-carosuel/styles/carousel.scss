@@ -57,11 +57,11 @@
     top: 0;
     right: 15px;
     z-index: 1;
-    line-height: normal;
+    line-height: normal;;
 
     animation: slideInRight 0.75s;
 
-    padding: 1%;
+    padding: 3% 1%;
 
     height: 100%;
     width: 25%;
@@ -100,7 +100,7 @@
         }
         & > .contact {
           text-align: center;
-          margin-top: 25%;
+          margin-top: 15%;
           font-size: 1vw;
           .title {
               font-size: 2vw;
