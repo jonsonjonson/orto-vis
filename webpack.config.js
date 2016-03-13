@@ -86,8 +86,8 @@ module.exports = {
       'common': 'src/app/common',
       // 'bindings': 'src/bindings',
       'components': 'src/app/components'
-      // 'services': 'src/app/services',
-      // 'stores': 'src/app/stores'
+        // 'services': 'src/app/services',
+        // 'stores': 'src/app/stores'
     }
   },
 
@@ -159,7 +159,11 @@ module.exports = {
     new CommonsChunkPlugin({
       name: 'common',
       filename: 'common.js'
-    })
+    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   sourceMap: true,
+    //   mangle: false
+    // })
   ],
 
   /*
