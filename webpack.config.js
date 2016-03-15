@@ -114,7 +114,19 @@ module.exports = {
       // support for .html as raw text
       {
         test: /\.html$/,
-        loader: 'html?attrs=img:src img:data-src img:data-src-retina'
+        loader: 'html',
+        // loader: 'html?attrs=img:src img:data-src img:data-src-retina',
+        query: {
+          attrs: ['img:src', 'img:data-src', 'img:data-src-retina'],
+          minimize: false,
+          // Teach html-minifier about Angular 2 syntax
+          customAttrSurround: [
+            [/#/, /(?:)/],
+            [/\*/, /(?:)/],
+            [/\[?\(?/, /(?:)/]
+          ],
+          customAttrAssign: [/\)?\]?=/],
+        }
       },
 
       // support for images as raw text
@@ -147,6 +159,9 @@ module.exports = {
       /reflect-metadata/
     ]
   },
+  // htmlLoader: {
+  //   ignoreCustomFragments: [/\[ng-class]\ /, /\[router-link]\ /, /\{\{.*?}}/]
+  // },
 
   plugins: [
     new OccurenceOrderPlugin(),
