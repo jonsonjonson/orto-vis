@@ -10,7 +10,6 @@ ul li>i {
     display: block;
     margin: auto;
   }
-
   &--text-center {
     text-align: center;
   }
@@ -21,7 +20,6 @@ ul li>i {
 
 .ortovis-container-heading {
   padding: 15px;
-
   &--text-center {
     text-align: center;
   }
@@ -33,4 +31,39 @@ ul li>i {
 .ortovis-content {
   padding: 25px 0;
   animation: fadeIn 0.5s;
+}
+
+.panel-group {
+  .separator {
+    height: 10px;
+    width: 100%;
+  }
+  .panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    .panel-heading {
+      background-color: #eee;
+      color: #333;
+      text-decoration: none;
+      padding: 15px;
+      a {
+        color: #333;
+      }
+      &:hover {
+        background-color: #e6e6e6;
+        cursor: pointer;
+        a {
+          color: #99111c;
+          text-decoration: none;
+        }
+      }
+    }
+    .panel-collapse {
+      padding: 20px;
+    }
+  }
+}
+.separator {
+  height: 20px;
+  width: 100%;
 }
