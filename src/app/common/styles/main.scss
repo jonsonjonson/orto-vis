@@ -1,9 +1,7 @@
 @import "variables";
-
 ul li>i {
   color: $brand-primary;
 }
-
 .ortovis-container {
   padding: 25px;
   img {
@@ -17,7 +15,6 @@ ul li>i {
     background-color: $gray-lighter;
   }
 }
-
 .ortovis-container-heading {
   padding: 15px;
   &--text-center {
@@ -27,43 +24,72 @@ ul li>i {
     background-color: darken($gray-lighter, 5%);
   }
 }
-
 .ortovis-content {
   padding: 25px 0;
   animation: fadeIn 0.5s;
 }
-
-.panel-group {
-  .separator {
-    height: 10px;
-    width: 100%;
+.panel {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.panel-group {}
+.panel-default {}
+.panel-heading {
+  background-color: #eee;
+  padding: 15px;
+  a {
+    color: #333;
+    text-decoration: none;
   }
-  .panel {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    .panel-heading {
-      background-color: #eee;
-      color: #333;
-      text-decoration: none;
-      padding: 15px;
-      a {
-        color: #333;
-      }
-      &:hover {
-        background-color: #e6e6e6;
-        cursor: pointer;
-        a {
-          color: #99111c;
-          text-decoration: none;
-        }
-      }
-    }
-    .panel-collapse {
-      padding: 20px;
-    }
+}
+.panel-heading-hover:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+  a {
+    color: #99111c;
   }
+}
+.panel-body {
+  padding: 20px;
 }
 .separator {
-  height: 20px;
+  height: 10px;
   width: 100%;
 }
+// .panel-group {
+//   .separator {
+//     height: 10px;
+//     width: 100%;
+//   }
+//   .panel {
+//     background-color: #fff;
+//     border: 1px solid #ddd;
+//     .panel-body {
+//       padding: 20px;
+//     }
+//     .panel-heading {
+//       background-color: #eee;
+//       color: #333;
+//       text-decoration: none;
+//       padding: 15px;
+//       a {
+//         color: #333;
+//       }
+//       &:hover {
+//         background-color: #e6e6e6;
+//         cursor: pointer;
+//         a {
+//           color: #99111c;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//     .panel-collapse {
+//       padding: 20px;
+//     }
+//   }
+// }
+// .separator {
+//   height: 20px;
+//   width: 100%;
+// }

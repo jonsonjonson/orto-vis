@@ -3,15 +3,15 @@ import {Component, View} from 'angular2/angular2';
 
 
 @Component({
-  selector: 'curedpatients'
+  selector: 'dentistry-patients'
 })
 @View({
-  template: require('./curedpatients.html'),
+  template: require('./dentistry-patients.html'),
   styles: [
     require('common/styles/helpers.scss'),
     require('common/styles/main.scss'),
-    require('./styles/curedpatients-gallery.scss')
+    require('../../styles/curedpatients-gallery.scss')
   ]
 })
 
-export class CuredPatients { }
+export class DentistryPatients { }
