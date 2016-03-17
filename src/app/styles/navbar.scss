@@ -5,8 +5,10 @@
   border-bottom: 7px solid $navbar-default-border;
   color: $navbar-default-link-color;
   padding: 0px;
+  padding-bottom: 1px;
   border-radius: 0;
   z-index: 9;
+  font-size: 0.9rem;
 
   & .navbar-toggler {
     position: fixed;
@@ -42,6 +44,7 @@
   color: $dropdown-link-color;
   border: none;
   border-radius: 0;
+  font-size: 0.9rem;
 
   &__item {
     color: $dropdown-link-hover-color;
