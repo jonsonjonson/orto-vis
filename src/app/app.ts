@@ -14,7 +14,7 @@ import {Orthodontics} from './components/orthodontics/orthodontics';
 import {Dentistry} from './components/dentistry/dentistry';
 import {Prosthetics} from './components/prosthetics/prosthetics';
 import {OrthodonticsPatients} from './components/curedpatients/components/orthodontics-patients/orthodontics-patients';
-import {DentistryPatients} from './components/curedpatients/components/dentistry-patients/dentistry-patients';
+import {ProstheticsPatients} from './components/curedpatients/components/prosthetics-patients/prosthetics-patients';
 import {Certificates} from './components/certificates/certificates';
 import {Contact} from './components/contact/contact';
 
@@ -47,7 +47,7 @@ declare var jQuery: any;
   { path: '/stomatologia', as: 'Dentistry', component: Dentistry },
   { path: '/protetyka', as: 'Prosthetics', component: Prosthetics },
   { path: '/pacjenci-ortodoncji', as: 'OrthodonticsPatients', component: OrthodonticsPatients },
-  { path: '/pacjenci-stomatologii', as: 'DentistryPatients', component: DentistryPatients },
+  { path: '/pacjenci-protetyki', as: 'ProstheticsPatients', component: ProstheticsPatients },
   { path: '/certyfikaty', as: 'Certificates', component: Certificates },
   { path: '/kontakt', as: 'Contact', component: Contact }
 ])
