@@ -17,6 +17,7 @@
     "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
     "bootstrap": "v4.0.0-alpha.2",
     "animate.css": "~3.5.0",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "tether": "~1.4.4"
   }
 }

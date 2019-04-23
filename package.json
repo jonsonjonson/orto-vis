@@ -16,6 +16,7 @@
     "angular2": "2.0.0-alpha.46",
     "reflect-metadata": "0.1.2",
     "sass-loader": "3.2.0",
+    "tether": "^1.4.6",
     "zone.js": "0.5.8"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "typescript": "1.6.2",
     "url-loader": "0.5.7",
     "webpack": "1.12.2",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "1.12.1"
   }
 }
